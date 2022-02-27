@@ -53,4 +53,25 @@ The picture above shows the Employee Class implementation where the two Classes 
 The picture above shows the Company Class, which represents the actual company and showcases how it uses the other classes.  
   
   
-**<ins>Note about the explanation of the Code and UML Diagrams:</ins>**
+# Note about the explanation of the Code and UML Diagrams:
+We tried our best to explain the most important parts of the code in this report and at the same time keep it as cohesive and concise as possible to not make this report unreasonably long due to the big amount of features we added.  
+So we avoided explaining the trivial methods which a person could understand what and how they do just from their name.  
+But we managed to explain all the methods in code through comments. So if there is any vagueness or ambiguity regarding a method or class that was not explained here, please refer to code where each Class, Method, Mechanism, Algorithm is thoroughly explained through comments.  
+  
+  
+# Running the project: 
+Steps for execution:  
+If you don’t have intelliJ IDE then do the following :  
+The `main()` function found in the Main.java is the entrypoint for the application  
+To run the application we first need to compile classes:  
+- `cd src`  
+- `javac *.java`  
+and then run the Main class:  
+- `java Main`  
+Otherwise :  
+We can open the project using intelliJ IDE and just run the project.  
+  
+# Design Patterns: 
+1. **Singleton**: This design pattern is used in the DatabaseConnection Class to ensure a single access to the database to avoid any possible problems caused by multiple connections at a time.  
+2. **Composite**: This design pattern is used in Team Class. Where the CompanyUnit acts as the component and Team as the composite and Employee as the leaf. We use this pattern because there exists multiple departments in a Company and these departments can also contain multiple other departments or employees, and because of that we can represent the structure of the Company as a tree. And the composite pattern helps us perform actions on a part of this tree easily. For example we showcase the usage of this pattern in the method getSalary in the Team Class which gets us the combined salary of everyone on that team. This Design pattern also helps us in developing the project further because it gives us a concrete structure to follow later on.  
+3. **Chain of Responsibility**: This design pattern is used in the CompanyUnitHandler Interface as the handler and CompanyUnit as the BaseHandler and then Employee and Team Classes as the Concrete Handlers. We use this pattern because our structure is represented as a tree because of the composite pattern. And the chain of responsibility patterns helps us pass requests to different parts of the tree. For example we showcase the usage of this pattern in the Class Team in method showHelp() which prints all information about this particular team and then prints all information about all the other teams in that team and so on till we have all the information about the team that handled the request at the start.  
