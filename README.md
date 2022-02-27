@@ -34,6 +34,8 @@ We showcase the usage of this Design Pattern through the two methods getSalary()
   
 For Example: the getSalary() method is used to get the salary of an employee or to get the combined salary of every employee on a team.  
   
+  
+  
 ![image](https://user-images.githubusercontent.com/44644160/155875512-815e9868-fee7-4c33-9af1-2ddcd0a17961.png)  
 The picture above describes the implementation of the **Chain Of Responsibility Design Pattern** through the 2 interfaces and 2 classes:  
 - <<Interface>> CompanyUnitHandler: which is the handler and it has what is common for all concrete handlers. We showcase it with the showHelp() method.  
@@ -44,10 +46,14 @@ We showcase the functionality of this Pattern through the showHelp() method.
   
 Where in the Team class if showHelp() is called, it shows the information about the team then passes the request to the teams within this team and it also shows the information about the sub-teams and so on till we reach the leaf nodes.  
   
+  
+  
 ![image](https://user-images.githubusercontent.com/44644160/155875611-5186afa9-bf4a-426d-8c2a-8faf373d5be1.png)  
 The picture above shows the Employee Class implementation where the two Classes Admin and User which are the two major elements of this project extend the Employee Class:  
 ● User Class: It represents a normal User and it allows him to perform a set of actions that they are allowed to do. For example: the User can Check his salary through the method getSalary() or he can check the actions he can perform through the method showHelp() or he can even resign entirely through the method resign().  
 ● Admin Class: this class represents an Admin in a company structure, where he can modify various information about the company in addition to the basic actions like checking his salary through the getSalary() method. For example: the Admin can add a new user to the company through the method addUser() or the Admin can change the company name through the method setCompanyName().  
+  
+  
   
 ![image](https://user-images.githubusercontent.com/44644160/155875653-234e3176-a143-4772-a314-8bd5280675d6.png)  
 The picture above shows the Company Class, which represents the actual company and showcases how it uses the other classes.  
