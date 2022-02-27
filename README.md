@@ -52,8 +52,8 @@ Where in the Team class if showHelp() is called, it shows the information about 
   
 ![image](https://user-images.githubusercontent.com/44644160/155875611-5186afa9-bf4a-426d-8c2a-8faf373d5be1.png)  
 The picture above shows the Employee Class implementation where the two Classes Admin and User which are the two major elements of this project extend the Employee Class:  
-● User Class: It represents a normal User and it allows him to perform a set of actions that they are allowed to do. For example: the User can Check his salary through the method getSalary() or he can check the actions he can perform through the method showHelp() or he can even resign entirely through the method resign().  
-● Admin Class: this class represents an Admin in a company structure, where he can modify various information about the company in addition to the basic actions like checking his salary through the getSalary() method. For example: the Admin can add a new user to the company through the method addUser() or the Admin can change the company name through the method setCompanyName().  
+- User Class: It represents a normal User and it allows him to perform a set of actions that they are allowed to do. For example: the User can Check his salary through the method getSalary() or he can check the actions he can perform through the method showHelp() or he can even resign entirely through the method resign().  
+- Admin Class: this class represents an Admin in a company structure, where he can modify various information about the company in addition to the basic actions like checking his salary through the getSalary() method. For example: the Admin can add a new user to the company through the method addUser() or the Admin can change the company name through the method setCompanyName().  
   
 ---
   
