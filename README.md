@@ -13,6 +13,7 @@ The ‘Employee’ then can perform these actions.
 
 # Explaination of the Code/UML
 ![image](https://user-images.githubusercontent.com/44644160/155875290-63414213-7456-4a12-a629-f026c8c96704.png)
+
 The picture above describes the two classes:
 -Database: which contains all the information about all the aspects in out project in Maps or attributes to simulate an actual Database
 -DatabaseConnection: which is the only way to interact with the Database through its methods. This Class also showcases the Singleton Design Pattern in which you can only have one connection to the database to avoid
